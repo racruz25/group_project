@@ -17,6 +17,14 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
+.navbar {
+    position: fixed;
+}
+
+.navbar-brand {
+    color:#404040;
+}
+
 .jumbotron-fluid {
     background-image: url('../img/machine-madness2.png');
     background-position: center top;
@@ -25,10 +33,6 @@ p {
     min-height: 100vh;
 }
 
-.navbar {
-    position: fixed;
-}
-
-.navbar-brand {
-    color:#404040;
+.background {
+    max-width: 700px;
 }
