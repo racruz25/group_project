@@ -1,0 +1,18 @@
+
+/* font color: #404040 */
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Graduate', cursive;
+}
+
+.jumbotron-fluid {
+    background-image: url('../img/machine-madness5.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.navbar {
+    position: fixed;
+}
