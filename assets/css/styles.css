@@ -1,8 +1,20 @@
 
 /* font color: #404040 */
+body{
+    color:#404040
+}
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, .navbar-brand {
     font-family: 'Graduate', cursive;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .jumbotron-fluid {
@@ -15,4 +27,8 @@ h1, h2, h3, h4, h5 {
 
 .navbar {
     position: fixed;
+}
+
+.navbar-brand {
+    color:#404040;
 }
