@@ -1,3 +1,3 @@
 # group_project
 
-## NCAA March Madness Predictor Model
+## NCAA March Madness predictor model
