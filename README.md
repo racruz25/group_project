@@ -43,3 +43,9 @@ The resulting submission format looks like the following, where "pred" represent
 
 ![Screen Shot 2022-03-19 at 12 58 42 PM](https://user-images.githubusercontent.com/49954261/159132884-c27c55d9-f2ff-4210-aea9-4fb55010a911.png)
 
+## Communication Protocols
+
+Our primary communication remains to be in our project Slack group, team-laredo. We are also taking advantage of our class time and office hours as time to collaborate. Our team has utilized GitHub and Google docs in the planning and implentation of this project, links are provided below. 
+
+[GitHub](https://github.com/racruz25/group_project/)</br>
+[Google Docs](https://drive.google.com/drive/folders/1aNtGcT20kqkOyTDbHkSGW0xy8At0g1wK?ths=true)
