@@ -11,7 +11,7 @@ This topic was chosen for a multitude of reasons. First, an immense amount of sp
 Online sports betting has become a huge business as more states move to legalize sports betting, and more notably, launch an online betting component. Sports betting overall generated 3.16 billion dollars in the first 10 months of 2021, which is a 230% increase from 2020. Both sports betting and sports analytics deal heavily in prediction. Both fields may be interested in predicting outcomes of games, predicting player performance, or predicting rising star players. Machine learning is well suited for the task of prediction, as it can take in a large amount of historical data with many features (like sports data) and predict new output values. 
 
 ## Data Source
-The data used for this project was found on [Kaggle](https://www.kaggle.com/c/mens-march-mania-2022/data). The data is in CSV format and includes the following information:
+The data used for this project was found on [Kaggle](https://www.kaggle.com/c/mens-march-mania-2022/data). The data is in multiple CSV files and includes the following information:
 - Team Names & ID
 - Locations
 - Conferences
@@ -55,11 +55,11 @@ The Google Slides presentation for this project can be found here: [Machine Madn
 
 ## Team Information
 ### Members
-- Rick Cruz
+- [Rick Cruz](https://github.com/racruz25)
 - Evan Duncan
-- Javi Garcia
-- Ali herington
-- Chris Llewellyn
+- [Javi Garcia](https://github.com/l-javier-garcia)
+- [Ali Herington](https://github.com/alilynnh)
+- [Chris Llewellyn](https://github.com/chllrisll)
 
 ### Communication Protocols
 - Team Slack channel will be checked frequently
