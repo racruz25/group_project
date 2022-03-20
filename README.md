@@ -1,6 +1,6 @@
 # Machine Madness
 
-## Topic
+## :basketball: Topic
 The goal of this project is to use historical NCAA mens' basketball data to train a machine learning model. The main questions of interest are:
 
 1. Can machine learning be used to accurately predict outcomes of various matchups in the 2022 March Madness tournament?
@@ -10,7 +10,7 @@ This topic was chosen for a multitude of reasons. First, an immense amount of sp
 
 Online sports betting has become a huge business as more states move to legalize sports betting, and more notably, launch an online betting component. Sports betting overall generated 3.16 billion dollars in the first 10 months of 2021, which is a 230% increase from 2020. Both sports betting and sports analytics deal heavily in prediction. Both fields may be interested in predicting outcomes of games, predicting player performance, or predicting rising star players. Machine learning is well suited for the task of prediction, as it can take in a large amount of historical data with many features (like sports data) and predict new output values. 
 
-## Data Source
+## :basketball: Data Source
 The data used for this project was found on [Kaggle](https://www.kaggle.com/c/mens-march-mania-2022/data). The data is in multiple CSV files and includes the following information:
 - Team Names & ID
 - Locations
@@ -21,7 +21,7 @@ The data used for this project was found on [Kaggle](https://www.kaggle.com/c/me
 - Conference Tournament Results
 - NCAA Tournament Results
 
-## Process
+## :basketball: Process
 1. Clean data in CSV files. 
 2. Import data into a database.
 3. Combine necessary tables. 
@@ -30,7 +30,7 @@ The data used for this project was found on [Kaggle](https://www.kaggle.com/c/me
 6. Analyze the results and create visualizations.
 7. Create a dashboard and presentation. 
 
-## Technologies
+## :basketball: Technologies
 Various technologies will be used throughout the different stages of this project. 
 
 - Data Processing
@@ -50,10 +50,16 @@ Various technologies will be used throughout the different stages of this projec
     - JavaScript
     - Google Slides
 
-## Presentation
+## :basketball: Model
+Different models will be evaluated in order to determine which results in the most accurate predictions. 
+
+## :basketball: Dashboard
+
+
+## :basketball: Presentation
 The Google Slides presentation for this project can be found here: [Machine Madness Presentation](https://docs.google.com/presentation/d/1_0r-Ifx1cumsOJh4Ke97PbYVbtlrDqmavh7X7dyavLg/edit?usp=sharing)
 
-## Team Information
+## :basketball: Team Information
 ### Members
 - [Rick Cruz](https://github.com/racruz25)
 - Evan Duncan
