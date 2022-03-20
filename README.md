@@ -50,6 +50,9 @@ Various technologies will be used throughout the different stages of this projec
     - JavaScript
     - Google Slides
 
+## :basketball: Database
+
+
 ## :basketball: Model
 Different models will be evaluated in order to determine which results in the most accurate predictions. 
 
