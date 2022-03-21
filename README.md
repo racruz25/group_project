@@ -1,45 +1,80 @@
-# NCAA March Madness predictor model
+# Machine Madness
 
-## https://www.kaggle.com/c/mens-march-mania-2022
+## :basketball: Topic
+The goal of this project is to use historical NCAA mens' basketball data to train a machine learning model. The main questions of interest are:
 
-# Inspired to merge sports and analytics in our project, with multiple goals in mind by months end we will have a more stern direction with where we want to go with this!--
+1. Can machine learning be used to accurately predict outcomes of various matchups in the 2022 March Madness tournament?
+2. Which variables lead to the most accurate predictions? 
 
-As of now we're putting together a March Madness Predictor Model to test our predictions w this months tournament (March 2022)
+This topic was chosen for a variety of reasons. First, an immense amount of sports data is generated each day from various schools, events, and leagues. In addition, this data is widely varied in categories. Some may be data about physical characteristics of individual players, and other data may detail team performance. Because of this rise in big data in sports, there are increased efforts to analyze this data in order to provide better sports services to stakeholders such as athletes, coaches, competition-level decision makers, and the general public. In addition, certain types of data can be used by coaches and athletes to customize training and gameplay strategies for better performance. 
 
-## From the 2022 March Machine Learning Mania 2022 Kaggle Comp.
-"Another year, another chance to predict the upsets, call the probabilities, and put your bracketology skills to the leaderboard test. In our eighth annual March Machine Learning Mania competition, Kagglers will once again join the millions of fans who attempt to predict the outcomes of this year's US men's college basketball tournament. But unlike most fans, you will pick the winners and losers using a combination of rich historical data and computing power, while the ground truth unfolds on television.
+Online sports betting has become a huge business as more states move to legalize sports betting, and more notably, launch an online betting component. Sports betting overall generated 3.16 billion dollars in the first 10 months of 2021, which is a 230% increase from 2020. Both sports betting and sports analytics deal heavily in prediction. Both fields may be interested in predicting outcomes of games, predicting player performance, or predicting rising star players. Machine learning is well suited for the task of prediction, as it can take in a large amount of historical data with many features (like sports data) and predict new output values. 
 
-You're provided data (https://www.kaggle.com/c/mens-march-mania-2022/data) of historical NCAA games and **are encouraged** to use other sources of publicly available data to gain a winning edge."
+## :basketball: Data Source
+The data used for this project was found on [Kaggle](https://www.kaggle.com/c/mens-march-mania-2022/data). The data is in multiple CSV files and includes the following information:
+- Team Names & ID
+- Locations
+- Conferences
+- Coaches
+- Tournament seeds since 1984-85 
+- Regular Season Results
+- Conference Tournament Results
+- NCAA Tournament Results
 
-![image](https://user-images.githubusercontent.com/49954261/159132682-49a2ebc3-3171-466f-a35d-e6c90705309c.png)
+## :basketball: Process
+1. Clean data in CSV files. 
+2. Import data into a database.
+3. Combine necessary tables. 
+4. Import table into Jupyter Notebook.
+5. Process data using a machine learning model.
+6. Analyze the results and create visualizations.
+7. Create a dashboard and presentation. 
 
-In stage one of this two-stage competition, participants will build and test their models against previous tournaments. In the second stage, participants will predict the outcome of the 2022 tournament. You don’t need to participate in the first stage to enter the second. The first stage exists to incentivize model building and provide a means to score predictions. **The real competition is forecasting the 2022 results.**
+## :basketball: Technologies
+Various technologies will be used throughout the different stages of this project. 
+
+- Data Processing
+    - Python
+    - pandas
+    - Jupyter Notebook
+    - SQL
+    - SQLAlchemy
+    - postgreSQL
+- Analysis
+    - NumPy
+    - TensorFlow
+    - SKLearn
+- Dashboard & Presentation
+    - HTML
+    - CSS
+    - JavaScript
+    - Bootstrap
+    - Google Slides
+
+## :basketball: Database
 
 
-Submissions are scored on the log loss:
+## :basketball: Model
+Different models will be evaluated in order to determine which results in the most accurate predictions. 
 
-**LogLoss=−1𝑛∑𝑖=1𝑛[𝑦𝑖log(𝑦̂ 𝑖)+(1−𝑦𝑖)log(1−𝑦̂ 𝑖)],**
-
-**where**
-
-**𝑛 is the number of games played**
-
-**𝑦̂ 𝑖 is the predicted probability of team 1 beating team 2**
-
-**𝑦𝑖 is 1 if team 1 wins, 0 if team 2 wins**
-
-**𝑙𝑜𝑔 is the natural logarithm**
+## :basketball: Dashboard
 
 
-The use of the logarithm provides extreme punishments for being both confident and wrong. In the worst possible case, a prediction that something is true when it is actually false will add an infinite amount to your error score. In order to prevent this, predictions are bounded away from the extremes by a small value.
+## :basketball: Presentation
+The Google Slides presentation for this project can be found here: [Machine Madness Presentation](https://docs.google.com/presentation/d/1_0r-Ifx1cumsOJh4Ke97PbYVbtlrDqmavh7X7dyavLg/edit?usp=sharing)
 
-## Submission File
+## :basketball: Team Information
+### Members
+- [Rick Cruz](https://github.com/racruz25)
+- Evan Duncan
+- [Javi Garcia](https://github.com/l-javier-garcia)
+- [Ali Herington](https://github.com/alilynnh)
+- [Chris Llewellyn](https://github.com/chllrisll)
 
-The file you submit will depend on whether the competition is in stage 1--historical model building--or stage 2--the 2022 tournament. Sample submission files will be provided for both stages. The format is a list of every possible matchup between the tournament teams. Since team1 vs. team2 is the same as team2 vs. team1, we only include the game pairs where team1 has the lower team id. For example, in a tournament of 68 teams, you will predict (68∗67)/2=2,278 matchups.
+### Communication Protocols
+- Team Slack channel will be checked frequently
+- Zoom meetings will occur every Saturday
+- Google Docs will be used for planning collaboratively 
 
-Each game has a unique id created by concatenating the season in which the game was played, the team1 id, and the team2 id. For example, "2016_1107_1110" indicates team 1107 potentially played team 1110 in the year 2016. You must predict the probability that the team with the lower id beats the team with the higher id.
 
-The resulting submission format looks like the following, where "pred" represents the predicted probability that the first team will win:
-
-![Screen Shot 2022-03-19 at 12 58 42 PM](https://user-images.githubusercontent.com/49954261/159132884-c27c55d9-f2ff-4210-aea9-4fb55010a911.png)
 
