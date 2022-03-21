@@ -52,7 +52,7 @@ Various technologies will be used throughout the different stages of this projec
     - Google Slides
 
 ## :basketball: Database
-
+![Early Database Draft](https://github.com/racruz25/group_project/blob/7e8fccca97d6ce185a010533508062b3ce405ca2/Screen%20Shot%202022-03-20%20at%2010.35.24%20PM.png)
 
 ## :basketball: Model
 Different models will be evaluated in order to determine which results in the most accurate predictions. 
@@ -74,7 +74,7 @@ The Google Slides presentation for this project can be found here: [Machine Madn
 ### Communication Protocols
 - Team Slack channel will be checked frequently
 - Zoom meetings will occur every Saturday
-- Google Docs will be used for planning collaboratively 
+- [Google Docs](https://drive.google.com/drive/folders/1aNtGcT20kqkOyTDbHkSGW0xy8At0g1wK?ths=true) will be used for planning collaboratively 
 
 
 
