@@ -19,6 +19,9 @@ p {
 
 .navbar {
     position: fixed;
+    background-color: #8da5c9;
+    width: 100%;
+    z-index: 5;
 }
 
 .navbar-brand {
@@ -38,7 +41,11 @@ p {
     padding-top: 4%;
 }
 
-.background {
+section {
+    padding-top: 45px;
+}
+
+.background p {
     max-width: 700px;
 }
 
