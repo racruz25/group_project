@@ -21,11 +21,16 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#background">Background</a>
-        <a class="navbar-brand" href="#model">Model</a>
-        <a class="navbar-brand" href="#results">Results</a>
-        <a class="navbar-brand" href="#results">Connect</a>
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="navbar-brand" href="#background">Background</a>
+            <a class="navbar-brand" href="#model">Model</a>
+            <a class="navbar-brand" href="#results">Results</a>
+            <a class="navbar-brand" href="#results">Connect</a>
+        </div>
     </nav>
 
     <div class="jumbotron jumbotron-fluid" id="header">
@@ -42,7 +47,7 @@
             <div class="container">
                 <h2>March Madness</h2>
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-12 col-md-8">
                         <p>March Madness refers to the division one men’s college basketball tournament. 
                             It is a single elimination tournament, which means teams are matched up and the team who loses is 
                             immediately eliminated from the tournament, while the team who wins advances to the next round to 
@@ -53,18 +58,18 @@
                             NCAA tournament until CBS broadcaster Brent Musburger used it during coverage of the 1982 NCAA tournament.
                         </p>
                     </div>
-                    <div class="col-2 text-center my-auto">
+                    <div class="col-6 col-md-2 text-center my-auto">
                         <h3>1939</h3>
                         <p>First Year</p>
                     </div>
-                    <div class="col-2 text-center my-auto">
+                    <div class="col-6 col-md-2 text-center my-auto">
                         <h3>8</h3>
                         <p>Original # of Teams</p>
                     </div>
                 </div>
                 <h2>Purpose of Analysis</h2>
                 <div class="row">
-                    <div class="col-10">
+                    <div class="col-12 col-md-10">
                         <p>The goal of this project is to use historical NCAA mens' basketball data to train a machine learning model. 
                             The main questions of interest are:</p>
                             <p style="margin-left: 5%">Can machine learning be used to accurately predict outcomes of various 
@@ -112,7 +117,7 @@
                 <div class="col-md-3">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Dropdown button
+                          Team 1
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <input class="form-control" id="myInput" type="text" placeholder="Search..">
@@ -124,7 +129,7 @@
                     <br>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Dropdown button
+                          Team 2
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <input class="form-control" id="myInput" type="text" placeholder="Search..">

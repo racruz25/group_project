@@ -28,6 +28,10 @@ p {
     color:#404040;
 }
 
+.navbar-toggler-icon {
+    color:#404040;
+}
+
 .jumbotron-fluid {
     background-image: url('../img/hoop-blank.png');
     background-position: center top;
@@ -66,3 +70,19 @@ section {
     border-radius: 0;
     background: #f1f1f1;
 }
+
+#dropdownMenuButton {
+    font-family: 'Graduate', cursive;
+}
+
+
+.dropdown-menu {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.dropdown-menu {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
