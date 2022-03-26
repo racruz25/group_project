@@ -83,7 +83,7 @@ The Google Slides presentation for this project can be found here: [Machine Madn
 ### Communication Protocols
 - Team Slack channel will be checked frequently
 - Zoom meetings will occur every Saturday
-- [Google Docs](https://drive.google.com/drive/folders/1aNtGcT20kqkOyTDbHkSGW0xy8At0g1wK?ths=true) will be used for planning collaboratively 
+- Google Docs will be used for planning collaboratively 
 
 
 
