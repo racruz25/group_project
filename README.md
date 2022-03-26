@@ -57,10 +57,12 @@ Various technologies will be used throughout the different stages of this projec
 Different models will be evaluated in order to determine which results in the most accurate predictions. 
 
 ## :basketball: Dashboard
-When first launching the dashboard, the header and navigagtion bar will fill the user's screen.    
+When first launching the dashboard, the header and navigagtion bar will fill the user's screen. 
+
 <img src="resources/mm-header-2.png">
 
 The general layout of the dashboard will resemble that in the image below:
+
 <img src="resources/mm-storyboard.png">
 
 The navbar will remain stickied to the top, so even as the user scrolls the navbar remains visible at the top of their screen. This will allow the user to easily jump between sections.
