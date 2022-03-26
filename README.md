@@ -42,7 +42,6 @@ Various technologies will be used throughout the different stages of this projec
     - postgreSQL
 - Analysis
     - NumPy
-    - TensorFlow
     - SKLearn
 - Dashboard & Presentation
     - HTML
@@ -66,7 +65,6 @@ The Google Slides presentation for this project can be found here: [Machine Madn
 ## :basketball: Team Information
 ### Members
 - [Rick Cruz](https://github.com/racruz25)
-- Evan Duncan
 - [Javi Garcia](https://github.com/l-javier-garcia)
 - [Ali Herington](https://github.com/alilynnh)
 - [Chris Llewellyn](https://github.com/chllrisll)
