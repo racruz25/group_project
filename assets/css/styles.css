@@ -85,4 +85,25 @@ section {
     font-family: 'Montserrat', sans-serif;
 }
 
+.table th {
+    font-family: 'Graduate', cursive;
+}
 
+.tbody {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#connect {
+    background-color:#8da5c9;
+}
+
+#connect a {
+    font-size: 3em;
+    color: #404040;
+}
+
+#connect a:hover {
+    font-size: 3em;
+    color: #f1f1f1;
+    text-decoration-line: none;
+}
