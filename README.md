@@ -57,6 +57,14 @@ Various technologies will be used throughout the different stages of this projec
 Different models will be evaluated in order to determine which results in the most accurate predictions. 
 
 ## :basketball: Dashboard
+When first launching the dashboard, the header and navigagtion bar will fill the user's screen.    
+<img src="resources/mm-header-2.png" width="75%" height="75%">
+
+The general layout of the dashboard will resemble that in the image below:
+<img src="resources/mm-storyboard.png" width="75%" height="75%">
+
+The navbar will remain stickied to the top, so even as the user scrolls the navbar remains visible at the top of their screen. This will allow the user to easily jump between sections.
+The first section of our dashboard will include a background section which gives information on our topic and why it was selected, as well as the data and tools used to complete the project. Next will be a section that will include information about model selection and images from the analysis phase. The last major section will be the results section. The main focus of the results section will be a filterable table. The user will be able to filter the predicted game results by either one team, or the a specific matchup of two teams. At the bottom of the page will be a small section which contains links to each team member’s github profiles as well as their emails. 
 
 
 ## :basketball: Presentation
