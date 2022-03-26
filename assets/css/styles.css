@@ -1,0 +1,109 @@
+
+/* font color: #404040 */
+body{
+    color:#404040
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+    font-family: 'Graduate', cursive;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    background-color: #8da5c9;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar-brand {
+    color:#404040;
+}
+
+.navbar-toggler-icon {
+    color:#404040;
+}
+
+.jumbotron-fluid {
+    background-image: url('../img/hoop-blank.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 5em;
+    padding-top: 4%;
+}
+
+section {
+    padding-top: 45px;
+}
+
+.background p {
+    max-width: 700px;
+}
+
+@media (max-width:640px) {
+    .title {
+        font-size: 4em;
+        padding-top: 25%;
+    }
+    h1 {
+        font-size: 3em;
+    }
+}
+
+#myInput {
+    padding: 20px;
+    margin-top: -6px;
+    border: 0;
+    border-radius: 0;
+    background: #f1f1f1;
+}
+
+#dropdownMenuButton {
+    font-family: 'Graduate', cursive;
+}
+
+
+.dropdown-menu {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.dropdown-menu {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.table th {
+    font-family: 'Graduate', cursive;
+}
+
+.tbody {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#connect {
+    background-color:#8da5c9;
+}
+
+#connect a {
+    font-size: 3em;
+    color: #404040;
+}
+
+#connect a:hover {
+    font-size: 3em;
+    color: #f1f1f1;
+    text-decoration-line: none;
+}
