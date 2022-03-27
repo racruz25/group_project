@@ -23,7 +23,7 @@ The data used for this project was found on [Kaggle](https://www.kaggle.com/c/me
 
 ## :basketball: Process
 1. Clean data in CSV files. 
-2. Import data into a database.
+2. Import data into a Database.
 3. Combine necessary tables. 
 4. Import table into Jupyter Notebook.
 5. Process data using a Machine Learning Model.
