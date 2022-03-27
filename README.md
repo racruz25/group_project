@@ -57,6 +57,17 @@ Various technologies will be used throughout the different stages of this projec
 Different models will be evaluated in order to determine which results in the most accurate predictions. 
 
 ## :basketball: Dashboard
+When first launching the dashboard, the header and navigagtion bar will fill the user's screen. To proceed other sections, the user can either scroll or click on the section title in the navbar. 
+
+<img src="resources/mm-header-2.png">
+
+The general layout of the rest of the dashboard will resemble the layout in the image below:
+
+<img src="resources/mm-storyboard.png">
+
+The navbar will remain stickied to the top, so even as the user scrolls the navbar remains visible at the top of their screen. This will allow the user to easily jump between sections.
+
+The first section of our dashboard will include a background section which will give information on our topic and the purpose of the analysis, as well as the data and tools used to complete the analysis. Next will be a section that will include information about model selection and images from the analysis phase. The last major section will be the results section, where the focus will be a filterable table. The user will be able to filter the predicted game results by either one team, or the a specific matchup of two teams. This will be done by selecting a given team from a dropdown list to the left of the table. These dropdown lists will include a text input search feature so an individual will not have to scroll to find a given team. At the bottom of the page there will be a small section which will list the team members and include each user's email and links to each team member’s github profiles. 
 
 
 ## :basketball: Presentation
@@ -72,7 +83,7 @@ The Google Slides presentation for this project can be found here: [Machine Madn
 ### Communication Protocols
 - Team Slack channel will be checked frequently
 - Zoom meetings will occur every Saturday
-- [Google Docs](https://drive.google.com/drive/folders/1aNtGcT20kqkOyTDbHkSGW0xy8At0g1wK?ths=true) will be used for planning collaboratively 
+- Google Docs will be used for planning collaboratively 
 
 
 
