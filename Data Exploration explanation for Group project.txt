@@ -1,0 +1,24 @@
+# Data Exploration explanation for Group project
+
+With the NCAA March Madness being such a popular and widely broadcast sporting event, Data is within reach with
+only a couple of taps of your smartphone or a few clicks of your mouse. Herein lay the connundrum as well: there
+were so many options to attain the info we need that narrowing it down to a select few was key.
+Through thorough investigation we concluded our best bets were the following sources:
+
+Kaggle.com was where we pulled most of our csv files from which includes
+
+- First, we imported the CVS files into SQL tables. 
+- Next, we joined tables which contained detailed game results into a master table. 
+- Lastly, we looked at teams who won to identify possible patterns in game statistics in order to determine which variables might be the most useful in predicting winning teams. We used this information, combined with our teams’ general knowledge of basketball, to pick the initial feature variables of our model.  
+
+The data used for this project was found on Kaggle. The data is in multiple CSV files and includes the
+following information:
+
+Team Names & ID
+Locations
+Conferences
+Coaches
+Tournament seeds since 1984-85
+Regular Season Results
+Conference Tournament Results
+NCAA Tournament Results
