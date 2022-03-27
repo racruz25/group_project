@@ -1,7 +1,7 @@
 # Machine Madness
 
 ## :basketball: Topic
-The goal of this project is to use historical NCAA mens' basketball data to train a machine learning model. The main questions of interest are:
+The goal of this project is to use historical NCAA mens' basketball data to train a Machine Learning model. The main questions of interest are:
 
 1. Can machine learning be used to accurately predict outcomes of various matchups in the 2022 March Madness Tournament?
 2. Which variables lead to the most accurate predictions? 
