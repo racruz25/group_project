@@ -26,7 +26,7 @@ The data used for this project was found on [Kaggle](https://www.kaggle.com/c/me
 2. Import data into a database.
 3. Combine necessary tables. 
 4. Import table into Jupyter Notebook.
-5. Process data using a machine learning model.
+5. Process data using a Machine Learning Model.
 6. Analyze the results and create visualizations.
 7. Create a dashboard and presentation. 
 
