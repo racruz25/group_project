@@ -62,7 +62,7 @@ The data was first checked for missing values, of which there were none. Next, w
 
 ### Analysis
 Our current model is a [random forest classifier](Random_Forest_Model.ipynb). The detailed offensive/defensive statistics were split into winning and losing team statistics. Next, Massey rankings were included. The minimum, maximum, and mean Massey rankings were generated for each team in each season. We used an 80/20 split for our training and testing sets, respectively. After the model was run, the feature importances were calculated and resulted in the following output:  
-![RFM Top 10 Features](resources/top_ten_features.png)
+<img src="resources/top_ten_features.png" height="50%" width="50%">
 
 ## :basketball: Dashboard
 When first launching the dashboard, the header and navigagtion bar will fill the user's screen. To proceed other sections, the user can either scroll or click on the section title in the navbar. 
