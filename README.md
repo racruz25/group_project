@@ -48,6 +48,7 @@ Various technologies will be used throughout the different stages of this projec
     - CSS
     - JavaScript
     - Bootstrap
+    - D3
     - Google Slides
 
 ## :basketball: Database
