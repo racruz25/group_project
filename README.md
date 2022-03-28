@@ -77,7 +77,7 @@ The navbar will remain stickied to the top, so even as the user scrolls the navb
 
 The first section of our dashboard will include a background section which will give information on our topic and the purpose of the analysis, as well as the data and tools used to complete the analysis. Next will be a section that will include information about model selection and images from the analysis phase. The last major section will be the results section, where the focus will be a filterable table. The user will be able to filter the predicted game results by either one team, or the a specific matchup of two teams. This will be done by selecting a given team from a dropdown list to the left of the table. These dropdown lists will include a text input search feature so an individual will not have to scroll to find a given team. At the bottom of the page there will be a small section which will list the team members and include each user's email and links to each team member’s github profiles. 
 
-HTML will be used along with Bootstrap for the general layout. Popper was used to create the searchable dropdown menus. Javascript will be used along with D3 to populate the filterable table. 
+HTML will be used along with Bootstrap for the general layout, and CSS will be used to style the dashboard. Popper will be used to create the searchable dropdown menus. Javascript will be used along with D3 to populate the filterable table. 
 
 
 ## :basketball: Presentation
