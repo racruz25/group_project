@@ -8,7 +8,9 @@ The goal of this project is to use historical NCAA mens' basketball data to trai
 
 This topic was chosen for a variety of reasons. First, an immense amount of sports data is generated each day from various schools, events, and leagues. In addition, this data is widely varied in categories. Some may be data about physical characteristics of individual players, and other data may detail team performance. Because of this rise in big data in sports, there are increased efforts to analyze this data in order to provide better sports services to stakeholders such as athletes, coaches, competition-level decision makers, and the general public. In addition, certain types of data can be used by coaches and athletes to customize training and gameplay strategies for better performance. 
 
-Online sports betting has become a huge business as more states move to legalize sports betting, and more notably, launch an online betting component. Sports betting overall generated 3.16 billion dollars in the first 10 months of 2021, which is a 230% increase from 2020. Both sports betting and sports analytics deal heavily in prediction. Both fields may be interested in predicting outcomes of games, predicting player performance, or predicting rising star players. Machine learning is well suited for the task of prediction, as it can take in a large amount of historical data with many features (like sports data) and predict new output values. 
+In addition to a rise in sports analytics, there has also been a rise in online sports betting. Online sports betting has become a huge business as more states move to legalize sports betting, and more notably, launch an online betting component. Sports betting overall generated 3.16 billion dollars in the first 10 months of 2021, which is a 230% increase from 2020. 
+
+Both sports betting and sports analytics deal heavily in prediction. Both fields may be interested in predicting outcomes of games, predicting player performance, or predicting rising star players. Machine learning is well suited for the task of prediction, as it can take in a large amount of historical data with many features (like sports data) and predict new output values. Because of the growth of both sports analytics and online sports betting, we decided to explore the potential of machine learning in predicting outcomes of sports events. Because the start date of the current project was in March, we thought that focusing our efforts on the 2022 March Madness tournament would be highly relevant. 
 
 ## :basketball: Data Source
 The data used for this project was found on [Kaggle](https://www.kaggle.com/c/mens-march-mania-2022/data). The data is in multiple CSV files and includes the following information:
@@ -55,11 +57,11 @@ Various technologies will be used throughout the different stages of this projec
 ![Early Database Draft](https://github.com/racruz25/group_project/blob/7e8fccca97d6ce185a010533508062b3ce405ca2/Screen%20Shot%202022-03-20%20at%2010.35.24%20PM.png)
 
 ## :basketball: Model
-### Data Preprocessing
+### Data Exploration and Preprocessing
 The data was first checked for missing values, of which there were none. Next, we imported the CSV files into [tables created in SQL](SQL/machinemadness.sql). Next, we [joined](SQL/seeds_detail_join.sql) the seed information into the team information table. Lastly, we looked at teams who won and lost to identify possible patterns in game statistics in order to determine which variables might be the most useful in predicting winning teams. We used this information, combined with our teams’ general knowledge of basketball, to pick the initial feature variables of our model.
 
 ### Analysis
-Our current model is a [random forest classifier](Random_Forest_Model.ipynb). The detailed offensive/defensive statistics were split into winning and losing team statistics. Next, Massey rankings were included. The minimum, maximum, and mean Massey rankings were generated for each team in each season. After the model was run, the feature importances were calculated and resulted in the following output:  
+Our current model is a [random forest classifier](Random_Forest_Model.ipynb). The detailed offensive/defensive statistics were split into winning and losing team statistics. Next, Massey rankings were included. The minimum, maximum, and mean Massey rankings were generated for each team in each season. We used an 80/20 split for our training and testing sets, respectively. After the model was run, the feature importances were calculated and resulted in the following output:  
 ![RFM Top 10 Features](resources/top_ten_features.png)
 
 ## :basketball: Dashboard
