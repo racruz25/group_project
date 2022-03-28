@@ -60,8 +60,11 @@ Various technologies will be used throughout the different stages of this projec
 ### Data Exploration and Preprocessing
 The data was first checked for missing values, of which there were none. Next, we imported the CSV files into [tables created in SQL](SQL/machinemadness.sql). Next, we [joined](SQL/seeds_detail_join.sql) the seed information into the team information table. Lastly, we looked at teams who won and lost to identify possible patterns in game statistics in order to determine which variables might be the most useful in predicting winning teams. We used this information, combined with our teams’ general knowledge of basketball, to pick the initial feature variables of our model.
 
+### Model Selection
+Our current model is a [random forest classifier](Random_Forest_Model.ipynb). Classification in random forests employs an ensemble methodology to attain the outcome. It creates many trees on the subset of the data and combines the output of all the trees. The benefit of random forest classifiers is that they reduce overfitting, and they also reduce variance which improves accuracy. A downside of random forest classifiers is the increased computational power needed, as the sklearn algorithm uses 100 trees by default. 
+
 ### Analysis
-Our current model is a [random forest classifier](Random_Forest_Model.ipynb). The detailed offensive/defensive statistics were split into winning and losing team statistics. Next, Massey rankings were included. The minimum, maximum, and mean Massey rankings were generated for each team in each season. We used an 80/20 split for our training and testing sets, respectively. After the model was run, the feature importances were calculated and resulted in the following output:  
+The detailed offensive/defensive statistics were split into winning and losing team statistics. Next, Massey rankings were included. The minimum, maximum, and mean Massey rankings were generated for each team in each season. We used an 80/20 split for our training and testing sets, respectively. After the model was run, the feature importances were calculated and resulted in the following output:  
 <img src="resources/top_ten_features.png" height="50%" width="50%">
 
 ## :basketball: Dashboard
