@@ -69,7 +69,7 @@ The detailed offensive/defensive statistics were split into winning and losing t
 **Classification Report**    
 <img src="resources/rf_classification.png" height="50%" width="50%">
 
-**Top Ten Features**
+**Top Ten Features**     
 <img src="resources/top_ten_features.png" height="50%" width="50%">
 
 ## :basketball: Dashboard
