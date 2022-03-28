@@ -64,7 +64,7 @@ The data was first checked for missing values, of which there were none. Next, w
 Our current model is a [random forest classifier](Random_Forest_Model.ipynb). Classification in random forests employs an ensemble methodology to attain the outcome. It creates many trees on the subset of the data and combines the output of all the trees. The benefit of random forest classifiers is that they reduce overfitting, and they also reduce variance which improves accuracy. A downside of random forest classifiers is the increased computational power needed, as the sklearn algorithm uses 100 trees by default. 
 
 ### Analysis
-The detailed offensive/defensive statistics were split into winning and losing team statistics. Next, Massey rankings were included. The minimum, maximum, and mean Massey rankings were generated for each team in each season. We used an 80/20 split for our training and testing sets, respectively. After the model was run, a classification report was run and the feature importances were calculated. 
+The detailed offensive/defensive statistics were split into winning and losing team statistics. Next, Massey rankings were included. The minimum, maximum, and mean Massey rankings were generated for each team in each season. We used an 80/20 split for our training and testing sets, respectively. After the model was run, a classification report was generated and the feature importances were calculated. 
 
 **Classification Report**    
 <img src="resources/rf_classification.png" height="50%" width="50%">
