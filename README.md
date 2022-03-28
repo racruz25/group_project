@@ -54,7 +54,12 @@ Various technologies will be used throughout the different stages of this projec
 ![Early Database Draft](https://github.com/racruz25/group_project/blob/7e8fccca97d6ce185a010533508062b3ce405ca2/Screen%20Shot%202022-03-20%20at%2010.35.24%20PM.png)
 
 ## :basketball: Model
-Different models will be evaluated in order to determine which results in the most accurate predictions. 
+### Data Preprocessing
+The data was first checked for missing values, of which there were none. Next, we imported the CSV files into [tables created in SQL](SQL/machinemadness.sql). Next, we [joined](SQL/seeds_detail_join.sql) the seed information into the team information table. Lastly, we looked at teams who won and lost to identify possible patterns in game statistics in order to determine which variables might be the most useful in predicting winning teams. We used this information, combined with our teams’ general knowledge of basketball, to pick the initial feature variables of our model.
+
+### Analysis
+Our current model is a [random forest classifier](Random_Forest_Model.ipynb). The detailed offensive/defensive statistics were split into winning and losing team statistics. Next, Massey rankings were included. The minimum, maximum, and mean Massey rankings were generated for each team in each season. After the model was run, the feature importances were calculated and resulted in the following output:  
+![RFM Top 10 Features](resources/top_ten_features.png)
 
 ## :basketball: Dashboard
 When first launching the dashboard, the header and navigagtion bar will fill the user's screen. To proceed other sections, the user can either scroll or click on the section title in the navbar. 
