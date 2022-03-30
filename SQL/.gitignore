@@ -1,8 +1,11 @@
+# Adding config.py file.
+db_config.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-dbconfig.py
+
 
 # C extensions
 *.so
