@@ -194,6 +194,17 @@ CREATE TABLE public.teams (
     lastd1season integer
 );
 
+CREATE TABLE public."mncaa_tourney_compact_results" (
+    "season" integer,
+    "daynum" integer,
+    "wteam_id" integer,
+    "wscore" integer,
+    "lteam_id" integer,
+    "lscore" integer,
+    "wloc" "char",
+    "num_ot" integer
+);
+
 select teams.teamid, teams.teamname,seeds.season, seeds.seed
 into seeds_detailed
 from teams
