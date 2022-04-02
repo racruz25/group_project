@@ -113,6 +113,18 @@
                     <div id="mean-chart"></div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>In addition to looking at the differences in means, a heatmap was created to examine any relationships between the different 
+                        regular seasons statistics. This was done in order to visualize any unexpected relationships that were not already assumed
+                        based on the general basketball knowledge of the team.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets/img/variable_heatmap.png" id="heatmap"></div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -128,16 +140,20 @@
                     <h2>Overview</h2>
                     <p>The data used for the model were regular season game statistics. Because the way in which sports are played 
                         is constantly evolving, only data from 2012 and onward was used. This allowed the model to still have a significant amount
-                        of data, while also ensuring that the data used was relevant.  
+                        of data, while also ensuring that the data used was relevant. The goal of the model was to determine whether "Team A" or "Team B"
+                        would win in a given matchup based on the teams' previous statistics.  
                     </p>
-                    <br>
                     <p>A random forest classifier was used for the model. The random forest algorithm creates a random selection of decision trees, 
                         and then merges the results of the various trees. Because of this cross validation, the random forest algorithm can provide 
                         higher accuracy. In addition, random forest algorithms reduce over-fitting issues, as it won't allow over-fitting trees into 
                         the model. 
                     </p>
-                     <h2>Performance</h2>
-                     <p>Based on the classification report (seen below), the model achieved an accuracy of 0.62. </p>
+                    <h2>Performance</h2>
+                    <p>Based on the classification report (seen below), the model achieved an accuracy of 0.62. After evaluating the accuracy of 
+                         the model, the top 10 feature importances were calculated based on mean decrease in impurity. The feature with the 
+                         highest importance was the number of field goals made by Team B. The feature with the second highest was the number of 
+                         steals by Team A. 
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -160,8 +176,14 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p>This section will include the interactive element. It will be a table of results which can be filtered
-                        by one team or by a specific matchup of two teams.</p> 
+                    <p>The table below displays various matchups between teams in the 2022 March Madness tournament. Each row represents a game
+                        between two teams. For each game, the table lists the team that our model predicted to be the winner of that game, 
+                        the probability that our model predicted of that team winning, and then the actual results of that matchup in the tournament. 
+                        The table can be filtered to show all games played by a selected team, or show a specific game if filtered by two teams. 
+                    </p> 
+                    <p><b>To use the table:</b> Select teams from the following dropdown menus. To see all games played by one team, select the team by using
+                        the "Team 1" dropdown. To look for a specific game, select two teams by using both dropdown menus. 
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -196,7 +218,8 @@
                             <tr>
                                 <th>Team 1</th>
                                 <th>Team 2</th>
-                                <th>P(T1 Win)</th>
+                                <th>Predicted Winner</th>
+                                <th>Probability</th>
                                 <th>Actual Winner</th>
                             </tr>
                         </thead>
