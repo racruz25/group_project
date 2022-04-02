@@ -63,6 +63,12 @@ section {
     }
 }
 
+@media (max-width:640px) {
+    #mean-chart {
+        overflow-y: scroll;
+    }
+}
+
 #myInput {
     padding: 20px;
     margin-top: -6px;

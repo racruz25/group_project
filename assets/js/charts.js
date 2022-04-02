@@ -4,7 +4,8 @@ var mean1 = {
     'Blocks', 'Personal Fouls Committed'],
     y: [84, 31, 63, 10, 25, 12, 17, 11, 22, 17, 12, 9, 4, 5],
     name: '2021 Champion',
-    type: 'bar'
+    type: 'bar',
+    marker: {color:'#8A9B68', opacity:0.75}
 };
   
 var mean2 = {
@@ -13,7 +14,8 @@ var mean2 = {
     'Blocks', 'Personal Fouls Committed'],
     y: [71, 25, 58, 7, 22, 13, 18, 8, 24, 13, 13, 6, 3, 5],
     name: '2021 Other Teams',
-    type: 'bar'
+    type: 'bar',
+    marker: {color:'#FF934F', opacity:0.75}
 };
   
 var mean_data = [mean1, mean2];
