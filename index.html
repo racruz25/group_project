@@ -21,6 +21,8 @@
     <!-- CSS  -->
     <link href="assets/css/styles.css" type="text/css" rel="stylesheet"/>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -177,8 +179,8 @@
             <div class="row">
                 <div class="col-12">
                     <p>The table below displays various matchups between teams in the 2022 March Madness tournament. Each row represents a game
-                        between two teams. For each game, the table lists the team that our model predicted to be the winner of that game, 
-                        the probability that our model predicted of that team winning, and then the actual results of that matchup in the tournament. 
+                        between two teams. For each game, the table lists the probability that our model calculated of Team 1 winning, team that 
+                        our model predicted to be the winner of that game, and then the actual results of that matchup in the tournament. 
                         The table can be filtered to show all games played by a selected team, or show a specific game if filtered by two teams. 
                     </p> 
                     <p><b>To use the table:</b> Select teams from the following dropdown menus. To see all games played by one team, select the team by using
@@ -187,21 +189,34 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-4">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="col-12 col-md-4 text-center">
+                    <form class="bg-light" style="font-family: inherit; font-size: 1rem;">
+                        <p>Filter Search</p>
+                        <ul class="list-group bg-dark">
+                            <li class="list-group-item bg-light">
+                                <label for="team1">Enter Team</label>
+                                <br/><input type="text" placeholder="Akron" id="Team 1" />
+                            </li>
+                            <li class="list-group-item bg-light">
+                                <label for="team2">Enter Team</label>
+                                <br/><input type="text" placeholder="Texas" id="Team 2" />
+                            </li>
+                        </ul>
+                    </form>
+                    <!-- <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="team1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Team 1
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <input class="form-control" id="myInput" type="text" placeholder="Search..">
-                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Akron</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </div>
                     <br>
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="team2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Team 2
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -210,10 +225,10 @@
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-12 col-md-8">
-                    <table class="table table-striped">
+                    <table class="table table-striped" id="results-table">
                         <thead>
                             <tr>
                                 <th>Team 1</th>
@@ -263,7 +278,7 @@
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>

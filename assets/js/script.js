@@ -1,12 +1,3 @@
-// $(document).ready(function(){
-//     $("#myInput").on("keyup", function() {
-//       var value = $(this).val().toLowerCase();
-//       $(".dropdown-menu li").filter(function() {
-//         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-//       });
-//     });
-// });
-
 const tableData = data;
 
 // get table references
@@ -80,3 +71,4 @@ d3.selectAll("input").on("change", updateFilters);
 
 // Build the table when the page loads
 buildTable(tableData);
+
