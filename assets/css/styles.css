@@ -79,7 +79,7 @@ img {
     object-fit: cover;
 }
 
-#myInput {
+/* #myInput {
     padding: 20px;
     margin-top: -6px;
     border: 0;
@@ -99,7 +99,7 @@ img {
 
 .dropdown-menu {
     font-family: 'Montserrat', sans-serif;
-}
+} */
 
 .table th {
     font-family: 'Graduate', cursive;
