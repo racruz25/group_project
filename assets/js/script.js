@@ -49,7 +49,8 @@ function updateFilters() {
   filterTable();
   
 }
-  
+
+
 // 7. Use this function to filter the table when data is entered.
 function filterTable() {
   
