@@ -125,9 +125,19 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h2></h2>
-                    <p>This section will include info about the machine learning model such as model selection,
-                     target and feature variables, performance on training & tetsing, and any relevant images from the analysis.</p>
+                    <h2>Overview</h2>
+                    <p>The data used for the model were regular season game statistics. Because the way in which sports are played 
+                        is constantly evolving, only data from 2012 and onward was used. This allowed the model to still have a significant amount
+                        of data, while also ensuring that the data used was relevant.  
+                    </p>
+                    <br>
+                    <p>A random forest classifier was used for the model. The random forest algorithm creates a random selection of decision trees, 
+                        and then merges the results of the various trees. Because of this cross validation, the random forest algorithm can provide 
+                        higher accuracy. In addition, random forest algorithms reduce over-fitting issues, as it won't allow over-fitting trees into 
+                        the model. 
+                    </p>
+                     <h2>Performance</h2>
+                     <p>Based on the classification report (seen below), the model achieved an accuracy of 0.62. </p>
                 </div>
             </div>
             <div class="row">
