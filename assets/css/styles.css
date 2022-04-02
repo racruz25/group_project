@@ -116,6 +116,8 @@ img {
 #connect a {
     font-size: 3em;
     color: #404040;
+    padding-left: .5em;
+    padding-right: .5em;
 }
 
 #connect a:hover {
