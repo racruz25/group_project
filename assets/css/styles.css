@@ -63,7 +63,23 @@ section {
     }
 }
 
-#myInput {
+@media (max-width:640px) {
+    #mean-chart {
+        overflow-y: scroll;
+    }
+    #feature-chart {
+        overflow: scroll;
+    }
+}
+
+img {
+    display:block;
+    max-width:100%;
+    max-height:100%;
+    object-fit: cover;
+}
+
+/* #myInput {
     padding: 20px;
     margin-top: -6px;
     border: 0;
@@ -83,7 +99,7 @@ section {
 
 .dropdown-menu {
     font-family: 'Montserrat', sans-serif;
-}
+} */
 
 .table th {
     font-family: 'Graduate', cursive;
@@ -100,6 +116,8 @@ section {
 #connect a {
     font-size: 3em;
     color: #404040;
+    padding-left: .5em;
+    padding-right: .5em;
 }
 
 #connect a:hover {

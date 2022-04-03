@@ -1,0 +1,71 @@
+Team 1,Team 2,P(T1 Win),Predicted Winner,Actual Winner
+Arkansas,Duke,0.49,Duke,Duke
+CS Fullerton,Duke,0.59,CS Fullerton,Duke
+Arkansas,Gonzaga,0.53,Arkansas,Arkansas
+Georgia St,Gonzaga,0.45,Gonzaga,Gonzaga
+Arizona,Houston,0.42,Houston,Houston
+Chattanooga,Illinois,0.46,Illinois,Illinois
+Houston,Illinois,0.45,Illinois,Houston
+Auburn,Jacksonville St,0.55,Auburn,Auburn
+Creighton,Kansas,0.31,Kansas,Kansas
+Duke,Kansas,0.36,Kansas,TBD
+Iowa St,LSU,0.64,Iowa St,Iowa St
+Boise St,Memphis,0.52,Boise St,Memphis
+Gonzaga,Memphis,0.45,Memphis,Gonzaga
+Auburn,Miami FL,0.54,Auburn,Miami FL
+Iowa St,Miami FL,0.43,Miami FL,Miami FL
+Kansas,Miami FL,0.38,Miami FL,Kansas
+Colorado St,Michigan,0.4,Michigan,Michigan
+Davidson,Michigan St,0.26,Michigan St,Michigan St
+Duke,Michigan St,0.25,Michigan St,Duke
+Arkansas,New Mexico St,0.44,New Mexico St,Arkansas
+Connecticut,New Mexico St,0.47,New Mexico St,New Mexico St
+Baylor,Norfolk St,0.44,Norfolk St,Baylor
+Baylor,North Carolina,0.49,North Carolina,North Carolina
+Duke,North Carolina,0.4,North Carolina,TBD
+Kansas,North Carolina,0.32,North Carolina,TBD
+Marquette,North Carolina,0.64,Marquette,North Carolina
+Alabama,Notre Dame,0.65,Alabama,Notre Dame
+Loyola-Chicago,Ohio St,0.59,Loyola-Chicago,Ohio St
+Kansas,Providence,0.42,Providence,Kansas
+Iowa,Richmond,0.55,Iowa,Richmond
+Providence,Richmond,0.52,Providence,Providence
+Notre Dame,Rutgers,0.49,Rutgers,Notre Dame
+Providence,S Dakota St,0.45,S Dakota St,Providence
+Creighton,San Diego St,0.5,Creighton,Creighton
+Murray St,San Francisco,0.41,San Francisco,Murray St
+Indiana,St Mary's CA,0.36,St Mary's CA,St Mary's CA
+Kentucky,St Peter's,0.49,St Peter's,St Peter's
+Murray St,St Peter's,0.4,St Peter's,St Peter's
+North Carolina,St Peter's,0.43,St Peter's,North Carolina
+Purdue,St Peter's,0.29,St Peter's,St Peter's
+Arizona,TCU,0.44,TCU,Arizona
+Seton Hall,TCU,0.52,Seton Hall,TCU
+Longwood,Tennessee,0.55,Longwood,Tennessee
+Michigan,Tennessee,0.43,Tennessee,Michigan
+Purdue,Texas,0.41,Texas,Purdue
+Duke,Texas Tech,0.28,Texas Tech,Duke
+Montana St,Texas Tech,0.44,Texas Tech,Texas Tech
+Notre Dame,Texas Tech,0.56,Notre Dame,Texas Tech
+Kansas,TX Southern,0.42,TX Southern,Kansas
+TAM C. Christi,TX Southern,0.53,TAM C. Christi,TX Southern
+Houston,UAB,0.6,Houston,Houston
+Akron,UCLA,0.58,Akron,UCLA
+North Carolina,UCLA,0.39,UCLA,North Carolina
+St Mary's CA,UCLA,0.62,St Mary's CA,UCLA
+Miami FL,USC,0.52,Miami FL,Miami FL
+Arkansas,Vermont,0.52,Arkansas,Arkansas
+Delaware,Villanova,0.48,Villanova,Villanova
+Duke,Villanova,0.39,Villanova,TBD
+Houston,Villanova,0.54,Houston,Villanova
+Kansas,Villanova,0.39,Villanova,TBD
+Michigan,Villanova,0.45,Villanova,Villanova
+North Carolina,Villanova,0.41,Villanova,TBD
+Ohio St,Villanova,0.45,Villanova,Villanova
+Texas,Virginia Tech,0.35,Virginia Tech,Texas
+Colgate,Wisconsin,0.61,Colgate,Wisconsin
+Iowa St,Wisconsin,0.52,Iowa St,Iowa St
+Arizona,Wright St,0.41,Wright St,Arizona
+Bryant,Wright St,0.43,Wright St,Wright St
+Indiana,Wyoming,0.43,Wyoming,Indiana
+Purdue,Yale,0.24,Yale,Purdue
