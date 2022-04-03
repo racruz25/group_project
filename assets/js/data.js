@@ -62,13 +62,13 @@ var data = [
       "Predicted Winner": "Kansas",
       "Actual Winner": "Kansas"
     },
-    {
-      "Team 1": "Duke",
-      "Team 2": "Kansas",
-      "P(T1 Win)": 0.36,
-      "Predicted Winner": "Kansas",
-      "Actual Winner": "TBD"
-    },
+    // {
+    //   "Team 1": "Duke",
+    //   "Team 2": "Kansas",
+    //   "P(T1 Win)": 0.36,
+    //   "Predicted Winner": "Kansas",
+    //   "Actual Winner": "TBD"
+    // },
     {
       "Team 1": "Iowa St",
       "Team 2": "LSU",
@@ -165,7 +165,7 @@ var data = [
       "Team 2": "North Carolina",
       "P(T1 Win)": 0.4,
       "Predicted Winner": "North Carolina",
-      "Actual Winner": "TBD"
+      "Actual Winner": "North Carolina"
     },
     {
       "Team 1": "Kansas",
@@ -398,13 +398,13 @@ var data = [
       "Predicted Winner": "Villanova",
       "Actual Winner": "Villanova"
     },
-    {
-      "Team 1": "Duke",
-      "Team 2": "Villanova",
-      "P(T1 Win)": 0.39,
-      "Predicted Winner": "Villanova",
-      "Actual Winner": "TBD"
-    },
+    // {
+    //   "Team 1": "Duke",
+    //   "Team 2": "Villanova",
+    //   "P(T1 Win)": 0.39,
+    //   "Predicted Winner": "Villanova",
+    //   "Actual Winner": "TBD"
+    // },
     {
       "Team 1": "Houston",
       "Team 2": "Villanova",
@@ -417,7 +417,7 @@ var data = [
       "Team 2": "Villanova",
       "P(T1 Win)": 0.39,
       "Predicted Winner": "Villanova",
-      "Actual Winner": "TBD"
+      "Actual Winner": "Kansas"
     },
     {
       "Team 1": "Michigan",
@@ -426,13 +426,13 @@ var data = [
       "Predicted Winner": "Villanova",
       "Actual Winner": "Villanova"
     },
-    {
-      "Team 1": "North Carolina",
-      "Team 2": "Villanova",
-      "P(T1 Win)": 0.41,
-      "Predicted Winner": "Villanova",
-      "Actual Winner": "TBD"
-    },
+    // {
+    //   "Team 1": "North Carolina",
+    //   "Team 2": "Villanova",
+    //   "P(T1 Win)": 0.41,
+    //   "Predicted Winner": "Villanova",
+    //   "Actual Winner": "TBD"
+    // },
     {
       "Team 1": "Ohio St",
       "Team 2": "Villanova",
