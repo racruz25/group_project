@@ -74,7 +74,7 @@ The first section of our dashboard will include a background section which will 
 The Google Slides presentation for this project can be found here: [Machine Madness Presentation](https://docs.google.com/presentation/d/1_0r-Ifx1cumsOJh4Ke97PbYVbtlrDqmavh7X7dyavLg/edit?usp=sharing)
 
 ## :basketball: Team Information
-### Members
+#### Members
 - [Rick Cruz](https://github.com/racruz25)
 - [Javi Garcia](https://github.com/l-javier-garcia)
 - [Ali Herington](https://github.com/alilynnh)
