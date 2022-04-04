@@ -58,13 +58,18 @@ Various technologies were used throughout the different stages of this project.
 
 ## :basketball: Model
 ### Data Exploration and Preprocessing
-The data was first checked for missing values, of which there were none. Next, we imported the CSV files into tables created in [SQL](SQL/updated_sql_queries.txt). Next, we joined the seed information into the team information table. Lastly, we looked at teams who won and lost to identify possible patterns in game statistics in order to determine which variables might be the most useful in predicting winning teams. We used this information, combined with our teams’ general knowledge of basketball, to pick the initial feature variables of our model.
+The data was first checked for missing values, of which there were none. Next, we imported the CSV files into tables created in [SQL](SQL/updated_sql_queries.txt). The first thing we were interested in exploring was if there were any differences in average game statistics for tournament winners compared to the rest of the teams. To do this, the champion of the 2021 NCAA tournament was identified, and the team's statistics for all of the games that the champion team played in the regular season were averaged. The 2021 regular season statistics for all other teams were then combined and averaged. It was found that the champion team had higher average values for 9 of the statistics. We used this information, combined with our teams’ general knowledge of basketball, to pick the initial feature variables of our model.
+
+**2021 Statistics**     
+<img src="resources/means_barchart.png" height="75%" width="75%">
 
 ### Model Selection
+The data used for the model were regular season game statistics. Because the way in which sports are played is constantly evolving, only data from 2012 and onward was used. This allowed the model to still have a significant amount of data, while also ensuring that the data used was relevant. The goal of the model was to determine whether "Team A" or "Team B" would win in a given matchup based on the teams' previous statistics. 
+
 Our current model is a [random forest classifier](rf_model.ipynb). Classification in random forests employs an ensemble methodology to attain the outcome. It creates many trees on the subset of the data and combines the output of all the trees. The benefit of random forest classifiers is that they reduce overfitting, and they also reduce variance which improves accuracy. A downside of random forest classifiers is the increased computational power needed, as the sklearn algorithm uses 100 trees by default. 
 
 ### Analysis
-The detailed offensive/defensive statistics were split into winning and losing team statistics. Next, Massey rankings were included. The minimum, maximum, and mean Massey rankings were generated for each team in each season. We used an 80/20 split for our training and testing sets, respectively. After the model was run, a classification report was generated and the feature importances were calculated. 
+The detailed offensive/defensive statistics were split into winning and losing team statistics. Next, ordinal rankings of the teams were included. The minimum, maximum, and mean rankings were generated for each team in each season. We used an 80/20 split for our training and testing sets, respectively. Based on the classification report (seen below), the model achieved an accuracy of 0.62. After evaluating the accuracy of the model, the top 10 feature importances were calculated based on mean decrease in impurity. The feature with the highest importance was the number of field goals made by Team B. The feature with the second highest importance was the number of steals by Team A. 
 
 **Classification Report**    
 <img src="resources/classification_report.png" height="50%" width="50%">
