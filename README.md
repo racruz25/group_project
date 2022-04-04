@@ -80,7 +80,7 @@ The Google Slides presentation for this project can be found here: [Machine Madn
 - [Ali Herington](https://github.com/alilynnh)
 - [Chris Llewellyn](https://github.com/chllrisll)
 
-### Communication Protocols
+#### Communication Protocols
 - Team Slack channel will be checked frequently
 - Zoom meetings will occur every Saturday
 - Google Docs will be used for planning collaboratively 
