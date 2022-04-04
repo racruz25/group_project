@@ -33,15 +33,14 @@ The data used for this project was found on [Kaggle](https://www.kaggle.com/c/me
 7. Create a dashboard and presentation. 
 
 ## :basketball: Technologies
-Various technologies will be used throughout the different stages of this project. 
+Various technologies were used throughout the different stages of this project. 
 
 - Data Processing
     - Python
     - pandas
     - Jupyter Notebook
-    - SQL
-    - SQLAlchemy
     - postgreSQL
+    - SQLAlchemy
 - Analysis
     - NumPy
     - SKLearn
@@ -51,6 +50,7 @@ Various technologies will be used throughout the different stages of this projec
     - JavaScript
     - Bootstrap
     - D3
+    - Plotly
     - Google Slides
 
 ## :basketball: Database
@@ -85,7 +85,7 @@ The navbar is stickied to the top, so even as the user scrolls the navbar remain
 
 The first section of our dashboard includes a background section that gives information on our topic and the purpose of the analysis, as well as the tools used to complete the analysis. Below that, there is a section that describes the data and the data exploration process. Next is a section that includes information about model selection and images from the analysis phase. The last major section is the results section, where the focus is a filterable table. The user is able to filter the predicted game results by typing a team in the search box to the left of the table. The table will filter to display only games in which that team participated. At the bottom of the page there is a small section which lists the team members and includes each user's email and links to each team member’s github profiles. 
 
-HTML was used along with Bootstrap for the general layout, and CSS will was used to style the dashboard. Javascript was used along with D3 to populate the filterable table. 
+HTML was used along with Bootstrap for the general layout, and CSS will was used to style the dashboard. Plotly was used to create the bar charts, and Javascript was used along with D3 to populate the filterable table. 
 
 
 ## :basketball: Presentation
@@ -97,11 +97,6 @@ The Google Slides presentation for this project can be found here: [Machine Madn
 - [Javi Garcia](https://github.com/l-javier-garcia)
 - [Ali Herington](https://github.com/alilynnh)
 - [Chris Llewellyn](https://github.com/chllrisll)
-
-### Communication Protocols
-- Team Slack channel will be checked frequently
-- Zoom meetings will occur every Saturday
-- Google Docs will be used for planning collaboratively 
 
 
 
