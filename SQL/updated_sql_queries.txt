@@ -1,0 +1,213 @@
+CREATE TABLE public."cities" (
+    "city_id" integer,
+    "city" "char",
+    "state" "char"
+);
+
+CREATE TABLE public."conferences" (
+    "conf_abbrev" "char",
+    "description" "char"
+);
+
+CREATE TABLE public."mconference_tourney_games" (
+    "season" integer,
+    "conf_abbrev" "char",
+    "daynum" integer,
+    "wteam_id" integer,
+    "lteam_id" integer
+);
+
+CREATE TABLE public."mgame_cities" (
+    "season" integer,
+    "daynum" integer,
+    "wteam_id" integer,
+    "lteam_id" integer,
+    "cr_type" "char",
+    "city_id" integer
+);
+
+CREATE TABLE public."mmassey_ordinals_thruday128" (
+    "season" integer,
+    "ranking_daynum" integer,
+    "system_name" "char",
+    "team_id" integer,
+    "ordinal_rank" integer
+);
+
+CREATE TABLE public."mncaa_tourney_detailed_results" (
+    "season" integer,
+    "daynum" integer,
+    "wteam_id" integer,
+    "wscore" integer,
+    "lteam_id" integer,
+    "lscore" integer,
+    "wloc" "char",
+    "num_ot" integer,
+    "wfgm" integer,
+    "wfga" integer,
+    "wfgm3" integer,
+    "wfga3" integer,
+    "wftm" integer,
+    "wfta" integer,
+    "wor" integer,
+    "wdr" integer,
+    "wast" integer,
+    "wto" integer,
+    "wstl" integer,
+    "wblk" integer,
+    "wpf" integer,
+    "lfgm" integer,
+    "lfga" integer,
+    "lfgm3" integer,
+    "lfga3" integer,
+    "lftm" integer,
+    "lfta" integer,
+    "lor" integer,
+    "ldr" integer,
+    "last" integer,
+    "lto" integer,
+    "lstl" integer,
+    "lblk" integer,
+    "lpf" integer
+);
+
+CREATE TABLE public."mncaa_tourney_seed_round_slots" (
+    "seed" "char",
+    "game_round" integer,
+    "game_slot" "char",
+    "early_daynum" integer,
+    "late_daynum" integer
+);
+
+CREATE TABLE public."mncaa_tourney_slots" (
+    "season" integer,
+    "slot" "char",
+    "strong_seed" "char",
+    "weak_seed" "char"
+);
+
+CREATE TABLE public."mregular_season_detailed_results" (
+    "season" integer,
+    "daynum" integer,
+    "wteam_id" integer,
+    "wscore" integer,
+    "lteam_id" integer,
+    "lscore" integer,
+    "wloc" "char",
+    "num_ot" integer,
+    "wfgm" integer,
+    "wfga" integer,
+    "wfgm3" integer,
+    "wfga3" integer,
+    "wftm" integer,
+    "wfta" integer,
+    "wor" integer,
+    "wdr" integer,
+    "wast" integer,
+    "wto" integer,
+    "wstl" integer,
+    "wblk" integer,
+    "wpf" integer,
+    "lfgm" integer,
+    "lfga" integer,
+    "lfgm3" integer,
+    "lfga3" integer,
+    "lftm" integer,
+    "lfta" integer,
+    "lor" integer,
+    "ldr" integer,
+    "last" integer,
+    "lto" integer,
+    "lstl" integer,
+    "lblk" integer,
+    "lpf" integer
+);
+
+CREATE TABLE public."msample_submission_stage2" (
+    "id" "char",
+    "pred" "char"
+);
+
+CREATE TABLE public."mseasons" (
+    "season" integer,
+    "day_zero" "char",
+    "region_w" "char",
+    "region_x" "char",
+    "region_y" "char",
+    "region_z" "char"
+);
+
+CREATE TABLE public."msecondary_tourney_compact_results" (
+    "season" integer,
+    "daynum" integer,
+    "wteam_id" integer,
+    "wscore" integer,
+    "lteam_id" integer,
+    "lscore" integer,
+    "wloc" "char",
+    "num_ot" integer,
+    "secondary_tourney" "char"
+);
+
+CREATE TABLE public."msecondary_tourney_teams" (
+    "season" integer,
+    "secondary_tourney" "char",
+    "team_id" integer
+);
+
+CREATE TABLE public."mteam_coaches" (
+    "season" integer,
+    "team_id" integer,
+    "first_daynum" integer,
+    "last_daynum" integer,
+    "coach_name" "char"
+);
+
+CREATE TABLE public."mteam_conferences" (
+    "season" integer,
+    "team_id" integer,
+    "conf_abbrev" "char"
+);
+
+CREATE TABLE public."mteam_spellings" (
+    "team_name_spelling" "char",
+    "team_id" integer
+);
+
+CREATE TABLE public.seeds (
+    season integer,
+    seed text,
+    teamid integer
+);
+
+CREATE TABLE public.seeds_detailed (
+    teamid integer,
+    teamname text,
+    season integer,
+    seed text
+);
+
+CREATE TABLE public.teams (
+    teamid integer,
+    teamname text,
+    firstd1season integer,
+    lastd1season integer
+);
+
+CREATE TABLE public."mncaa_tourney_compact_results" (
+    "season" integer,
+    "daynum" integer,
+    "wteam_id" integer,
+    "wscore" integer,
+    "lteam_id" integer,
+    "lscore" integer,
+    "wloc" "char",
+    "num_ot" integer
+);
+
+select teams.teamid, teams.teamname,seeds.season, seeds.seed
+into seeds_detailed
+from teams
+inner join seeds
+on teams.teamid=seeds.teamid
+;
