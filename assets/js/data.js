@@ -172,7 +172,7 @@ var data = [
       "Team 2": "North Carolina",
       "P(T1 Win)": 0.32,
       "Predicted Winner": "North Carolina",
-      "Actual Winner": "TBD"
+      "Actual Winner": "Kansas"
     },
     {
       "Team 1": "Marquette",
