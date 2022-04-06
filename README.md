@@ -57,6 +57,7 @@ Various technologies were used throughout the different stages of this project.
 ![Early Database Draft](https://github.com/racruz25/group_project/blob/7e8fccca97d6ce185a010533508062b3ce405ca2/Screen%20Shot%202022-03-20%20at%2010.35.24%20PM.png)
 
 ## :basketball: Model
+
 ### Data Exploration and Preprocessing
 The [kaggle](https://www.kaggle.com/c/mens-march-mania-2022/data) dataset has an abundance of college basketball data. We first observed the most robust files and found the Regular Season Detailed/ Compact Results files were a good start and we were able to do some interesting joins and gain alot of insight within the regular season data, tournament data, and the consensus (Massey) rankings.
 
@@ -90,7 +91,7 @@ Cons:
     
     3.) More complex: The prediction of a single decision tree is easier to interpret when compared to a forest of them.
 
-### About the Model
+### About our Model
 
 **Our random forest model predicts the result of Team 1 and Team 2**
 
@@ -130,7 +131,7 @@ Winning/Losing Personal Fouls
 
 The Massey Ordinal Rank csv gives us a team rank for every day number (DayNum) in the College Basketball Season. The Massey Ordinal Rank lists out rankings (e.g. #1, #2, #3, ..., #N) of teams going back to the 2002-2003 season, under a large number of different ranking system methodologies. The information was gathered by Kenneth Massey and provided on his College Basketball Ranking Composite page. https://www.masseyratings.com/cb/compare.htm 
 
-### RF Model Analysis
+## RF Model Analysis
 
 The detailed offensive/defensive statistics were split into winning and losing team statistics. Next, ordinal rankings of the teams were included. The minimum, maximum, and mean rankings were generated for each team in each season. We used an 80/20 split for our training and testing sets, respectively. Based on the classification report (seen below), the model achieved an accuracy of 0.62. After evaluating the accuracy of the model, the top 10 feature importances were calculated based on mean decrease in impurity. The feature with the highest importance was the number of field goals made by Team B. The feature with the second highest importance was the number of steals by Team A. 
 
