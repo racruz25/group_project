@@ -58,7 +58,7 @@ Various technologies were used throughout the different stages of this project.
 
 ## :basketball: Model
 ### Data Exploration and Preprocessing
-The [kaggle](https://www.kaggle.com/c/mens-march-mania-2022/data) dataset has an abundance of college basketball data. We first observed the most robust files and found the Regular Season Detailed/ Compact Results files were a good start and we were able to do some interesting joins and gain alot of insight within the regular season data, tournament data, and the consensus rankings.
+The [kaggle](https://www.kaggle.com/c/mens-march-mania-2022/data) dataset has an abundance of college basketball data. We first observed the most robust files and found the Regular Season Detailed/ Compact Results files were a good start and we were able to do some interesting joins and gain alot of insight within the regular season data, tournament data, and the consensus (Massey) rankings.
 
 One of the the first things our group wanted to identify was to find if there were any trends that past tournament winners had that we could highlight into our model. This was harder than it sounds and ultimately we saw regular season data and tournament data being the best and strongest indicators of predicting a game result.
 
