@@ -69,9 +69,10 @@ One of the the first things our group wanted to identify was to find if there we
 <img src="resources/means_barchart.png" height="75%" width="75%">
 
 ### Model Selection
-We trained our data by averaging winning and losing teams statistics from past years (reg_season and tourney) - this is the base of our model - while we also incorporated Masseys's Ordinal Ranking which is a consensus ranking of the top college basketball rating systems; Ex- (Pomeroy, Massey, etc.)
 
-The data used for the model were regular season game statistics, tournament game statitistics, and Massey Rankings. Because Professional and Collegiate Basketball is constantly evolving (ex: 3pt Shooting etc) only data from 2012 and onward was used. The data we wanted train was in the 10-12 year time frame. This allowed the model to still have a significant amount of data, while also ensuring that the data used was relevant. The goal of the model was to determine whether "Team A" or "Team B" would win in a given matchup based on the teams' previous statistics and we saw that 10-12 years of data gave us the best prediction score.
+**In our research we found many models that use a very done-before, public favorite outcome and these models are everywhere but we wanted to embrace a model more random variant and after our model predicted a huge upset in round 1 - we were all curious what more the model might predict.**
+
+The data used for the model were regular season game statistics, tournament game statitistics, and Massey Rankings. Because Professional and Collegiate Basketball is constantly evolving (ex: 3pt Shooting etc) only data from 2012 and onward was used. The data we wanted train was in the 10-12 year time frame. This allowed the model to still have a significant amount of data, while also ensuring that the data used was relevant. The goal of the model was to determine whether "Team A" or "Team B" would win in a given matchup based on the teams' previous statistics and we saw that 10-12 years of data gave us the best prediction score. 
 
 The machine learning model is a [random forest classifier](rf_model.ipynb). Classification in random forests employs an ensemble methodology to attain the outcome. It creates many trees on the subset of the data and combines the output of all the trees. 
 
@@ -94,6 +95,8 @@ Cons:
 ### About our Model
 
 **Our random forest model predicts the result of Team 1 and Team 2**
+
+We trained our data by averaging winning and losing teams statistics from past years (reg_season and tourney) - this is the base of our model - while we also incorporated Masseys's Ordinal Ranking which is a consensus ranking of the top college basketball rating systems; Ex- (Pomeroy, Massey, etc.)
 
 **The base of our model was built by Aggregate Season Stats, Aggregate Tournament Stats, Average Ranking:**
 
