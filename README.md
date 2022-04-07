@@ -109,7 +109,7 @@ We trained our data by averaging winning and losing teams statistics from past y
 
 The detailed offensive/defensive statistics were split into winning and losing team statistics. Next, ordinal rankings of the teams were included. The minimum, maximum, and mean rankings were generated for each team in each season. We used an 80/20 split for our training and testing sets, respectively. Based on the classification report (seen below), the model achieved an accuracy of 0.62. After evaluating the accuracy of the model, the top 10 feature importances were calculated based on mean decrease in impurity. The feature with the highest importance was the number of field goals made by Team B. The feature with the second highest importance was the number of steals by Team A. 
 
-Interestingly enough, the model predicted some interesting outcomes for this years tournament. Initially we had talked about how we think teams that would not be ranked high in the massey rankings (cinderella teams etc.) would be weighed down in the model but the opposite occured our model went with many underdogs in this years tournament even [predicting](https://github.com/racruz25/group_project/blob/main/Old%20Drafts/model_results.csv) Saint Peteres win over #1 seed Kentucky.
+Interestingly enough, the model predicted some interesting outcomes for this years tournament. Initially we had talked about how we think teams that would not be ranked high in the massey rankings (cinderella teams etc.) would be weighed down in the model but the opposite occured our model went with many underdogs in this years tournament even [predicting](https://github.com/racruz25/group_project/blob/main/Old%20Drafts/model_results.csv) Saint Peters win over #1 seed Kentucky.
 
 
 **Classification Report**    
