@@ -59,11 +59,9 @@ Various technologies were used throughout the different stages of this project.
 ## :basketball: Model
 ### Data Exploration and Preprocessing
 
-The [kaggle](https://www.kaggle.com/c/mens-march-mania-2022/data) dataset has an abundance of college basketball data. We first explroed the most robust files and concluded that the Regular Season Detailed/Compact Results files were a good start. We were able to do some interesting joins and gain alot of insight within the regular season data, tournament data, and the consensus (Massey) rankings.
+The [kaggle](https://www.kaggle.com/c/mens-march-mania-2022/data) dataset has an abundance of college basketball data. We first explored the most robust files and concluded that the Regular Season Detailed/Compact Results files were a good start. We were able to do some interesting joins and gain alot of insight within the regular season data, tournament data, and the consensus (Massey) rankings.
 
-One of the the first things our group wanted to identify was to find if there were any trends that past tournament winners had that we could highlight into our model. This was harder than it sounds and ultimately we saw regular season data and tournament data being the best and strongest indicators of predicting a game result.
-
-For example, we isolated just the 2021 season, identified the champion of the 2021 NCAA tournament, and averaged the team's statistics for all of the games that the champion team played in the regular season. The 2021 regular season statistics for all other teams were then combined and averaged. When we compared these averages, it was found that the champion team had higher average values for 9 of the statistics. We used this information, combined with our teams’ general knowledge of basketball, to pick the initial feature variables of our model.
+One of the the first things our group wanted to identify was if there were any trends that past tournament winners had that could inform our feature selection process. For example, we isolated the 2021 season data, identified the champion of the 2021 NCAA tournament, and averaged the team's statistics for all of the games that the champion team played in the regular season. The 2021 regular season statistics for all other teams were then combined and averaged. When we compared these averages, it was found that the champion team had higher average values for 9 of the statistics. We used this information, combined with our teams’ general knowledge of basketball, to pick the initial feature variables of our model. Ultimately, we saw regular season data and tournament data as being the best and strongest indicators of predicting a game result.
 
 **2021 Statistics**     
 <img src="resources/means_barchart.png" height="75%" width="75%">
@@ -74,19 +72,19 @@ The machine learning model is a [random forest classifier](rf_model.ipynb). Clas
 
 Pros: 
 
-    1.) Reduces overfitting, reduces the variance and therefore improves the accuracy.
+- Reduces overfitting, reduces the variance and therefore improves the accuracy.
     
-    2.) Can handle both regression and classification tasks with a high degree of accuracy.
+- Can handle both regression and classification tasks with a high degree of accuracy.
     
-    3.) Random forest makes it easy to evaluate variable importance, or contribution, to the model. There are a few ways to evaluate feature importance.
+- Random forest makes it easy to evaluate variable importance, or contribution, to the model. There are a few ways to evaluate feature importance.
 
 Cons: 
 
-    1.) By default, it creates 100 trees in Python sklearn library. To do so, this algorithm requires much more computational power and resources.
+- By default, it creates 100 trees in Python sklearn library. To do so, this algorithm requires much more computational power and resources.
     
-    2.) Requires more resources: Since random forests process larger data sets, they’ll require more resources to store that data.
+- Requires more resources: Since random forests process larger data sets, they’ll require more resources to store that data.
     
-    3.) More complex: The prediction of a single decision tree is easier to interpret when compared to a forest of them.
+- More complex: The prediction of a single decision tree is easier to interpret when compared to a forest of them.
     
 
 ### About our Model
