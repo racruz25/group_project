@@ -35,13 +35,15 @@ The data used for this project was found on [Kaggle](https://www.kaggle.com/c/me
 ## :basketball: Technologies
 Various technologies were used throughout the different stages of this project. 
 
-- Data Processing
-    - Python
-    - pandas
-    - Jupyter Notebook
+Data was stored in a postgreSQL database, and connected to our code by using SQLAlchemy. To analyze the data, Python was used in Jupyter Notebook, and we utilized the pandas, NumPy, and scikit-learn libraries. For the dashboard, HTML5 was used with Bootstrap for the general layout, CSS3 was used for the styling, and JavaScript was used along with Plotly and D3 for the interactive elements. Our presentation uses Google Slides. 
+
+- Data Handling
     - postgreSQL
     - SQLAlchemy
 - Analysis
+    - Python
+    - Jupyter Notebook
+    - pandas
     - NumPy
     - SKLearn
 - Dashboard & Presentation
