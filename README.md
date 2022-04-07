@@ -108,7 +108,7 @@ The model predicted some interesting outcomes for this years tournament. Initial
 <img src="resources/final_top10_features.png" height="50%" width="50%">
 
 ## :basketball: Dashboard
-Click [here](racruz25.github.io/group_project/) to view the deployed dashboard. 
+Click [here](https://racruz25.github.io/group_project/) to view the deployed dashboard. 
 
 When first launching the dashboard, the header and navigagtion bar fill the user's screen. To proceed other sections, the user can either scroll or click on the section title in the navbar. 
 
