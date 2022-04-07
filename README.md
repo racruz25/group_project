@@ -1,7 +1,7 @@
 # Machine Madness
 
 ## :basketball: Topic
-The goal of this project is to use historical NCAA mens' basketball data to train a Machine Learning model. The main questions of interest are:
+The goal of this project is to use NCAA Men's Basketball data to train a Machine Learning model. The main questions of interest are:
 
 1. Can Machine Learning be used to accurately predict outcomes of various matchups in the 2022 March Madness Tournament?
 2. Which variables lead to the most accurate predictions? 
@@ -58,18 +58,59 @@ Various technologies were used throughout the different stages of this project.
 
 ## :basketball: Model
 ### Data Exploration and Preprocessing
-The data was first checked for missing values, of which there were none. Next, we imported the CSV files into tables created in [SQL](SQL/updated_sql_queries.txt). The first thing we were interested in exploring was if there were any differences in average game statistics for tournament winners compared to the rest of the teams. To do this, the champion of the 2021 NCAA tournament was identified, and the team's statistics for all of the games that the champion team played in the regular season were averaged. The 2021 regular season statistics for all other teams were then combined and averaged. It was found that the champion team had higher average values for 9 of the statistics. We used this information, combined with our teams’ general knowledge of basketball, to pick the initial feature variables of our model.
+
+The [kaggle](https://www.kaggle.com/c/mens-march-mania-2022/data) dataset has an abundance of college basketball data. We first observed the most robust files and found the Regular Season Detailed/ Compact Results files were a good start and we were able to do some interesting joins and gain alot of insight within the regular season data, tournament data, and the consensus (Massey) rankings.
+
+One of the the first things our group wanted to identify was to find if there were any trends that past tournament winners had that we could highlight into our model. This was harder than it sounds and ultimately we saw regular season data and tournament data being the best and strongest indicators of predicting a game result.
+
+**After much research and building we were validated in finding the champion of the 2021 NCAA tournament was identified, and the team's statistics for all of the games that the champion team played in the regular season were averaged. The 2021 regular season statistics for all other teams were then combined and averaged. It was found that the champion team had higher average values for 9 of the statistics. We used this information, combined with our teams’ general knowledge of basketball, to pick the initial feature variables of our model.**
 
 **2021 Statistics**     
 <img src="resources/means_barchart.png" height="75%" width="75%">
 
 ### Model Selection
-The data used for the model were regular season game statistics. Because the way in which sports are played is constantly evolving, only data from 2012 and onward was used. This allowed the model to still have a significant amount of data, while also ensuring that the data used was relevant. The goal of the model was to determine whether "Team A" or "Team B" would win in a given matchup based on the teams' previous statistics. 
 
-The model chosen is a [random forest classifier](rf_model.ipynb). Classification in random forests employs an ensemble methodology to attain the outcome. It creates many trees on the subset of the data and combines the output of all the trees. The benefit of random forest classifiers is that they reduce overfitting, and they also reduce variance which improves accuracy. A downside of random forest classifiers is the increased computational power needed, as the sklearn algorithm uses 100 trees by default. 
+**In our research we found many models that use a very done-before, public favorite outcome but we wanted to embrace a model more random variant and after our model predicted a huge upset in round 1 - we were all curious what more the model might predict.**
 
-### Analysis
+The data used for the model were regular season game statistics, tournament game statitistics, and Massey Rankings. Because Professional and Collegiate Basketball is constantly evolving (ex: 3pt Shooting etc) only data from 2012 and onward was used. The data we wanted train was in the 10-12 year time frame. This allowed the model to still have a significant amount of data, while also ensuring that the data used was relevant. The goal of the model was to determine whether "Team A" or "Team B" would win in a given matchup based on the teams' previous statistics and we saw that 10-12 years of data gave us the best prediction score. 
+
+The machine learning model is a [random forest classifier](rf_model.ipynb). Classification in random forests employs an ensemble methodology to attain the outcome. It creates many trees on the subset of the data and combines the output of all the trees. 
+
+Pros: 
+
+    1.) Reduces overfitting, reduces the variance and therefore improves the accuracy.
+    
+    2.) Since random forest can handle both regression and classification tasks with a high degree of accuracy.
+    
+    3.) Random forest makes it easy to evaluate variable importance, or contribution, to the model. There are a few ways to evaluate feature importance.
+
+Cons: 
+
+    1.) By default, it creates 100 trees in Python sklearn library. To do so, this algorithm requires much more computational power and resources.
+    
+    2.) Requires more resources: Since random forests process larger data sets, they’ll require more resources to store that data.
+    
+    3.) More complex: The prediction of a single decision tree is easier to interpret when compared to a forest of them.
+    
+
+### About our Model
+
+### The base of our model was built by Aggregate Season Stats, Aggregate Tournament Stats, Average Ranking: ###
+
+**Our random forest model predicts the result of Team 1 and Team 2**
+
+We trained our data by averaging winning and losing teams statistics from past years (reg_season and tourney) - while we also incorporated Masseys's Ordinal Ranking which is a consensus ranking of the top college basketball rating systems; Ex- (Pomeroy, Massey, etc.)
+
+**Basic Offensive/Defensive Statistical Data - Split into winning and losing team data**
+
+**Next we incorporated a Consensus Order Ranking (Massey Ordinal Ranking) to give the model a strength feature.**
+
+## RF Model Analysis
+
 The detailed offensive/defensive statistics were split into winning and losing team statistics. Next, ordinal rankings of the teams were included. The minimum, maximum, and mean rankings were generated for each team in each season. We used an 80/20 split for our training and testing sets, respectively. Based on the classification report (seen below), the model achieved an accuracy of 0.62. After evaluating the accuracy of the model, the top 10 feature importances were calculated based on mean decrease in impurity. The feature with the highest importance was the number of field goals made by Team B. The feature with the second highest importance was the number of steals by Team A. 
+
+Interestingly enough, the model predicted some interesting outcomes for this years tournament. Initially we had talked about how we think teams that would not be ranked high in the massey rankings (cinderella teams etc.) would be weighed down in the model but the opposite occured our model went with many underdogs in this years tournament even [predicting](https://github.com/racruz25/group_project/blob/main/Old%20Drafts/model_results.csv) Saint Peteres win over #1 seed Kentucky.
+
 
 **Classification Report**    
 <img src="resources/classification_report.png" height="50%" width="50%">
