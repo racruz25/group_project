@@ -127,7 +127,7 @@ The first section of our dashboard includes a background section that gives info
 HTML was used along with Bootstrap for the general layout, and CSS was used to style the dashboard. Plotly was used to create the bar charts, and Javascript was used along with D3 to populate the filterable table. 
 
 ## :basketball: Presentation
-The Google Slides presentation for this project can be found here: [Machine Madness Presentation](https://docs.google.com/presentation/d/1_0r-Ifx1cumsOJh4Ke97PbYVbtlrDqmavh7X7dyavLg/edit?usp=sharing)
+The Google Slides presentation for this project can be found here: [Machine Madness Presentation](https://docs.google.com/presentation/d/1_0r-Ifx1cumsOJh4Ke97PbYVbtlrDqmavh7X7dyavLg/edit?usp=sharing). (Speaker notes can be found in the notes sections of the slides). 
 
 ## :basketball: Team Information
 ### Members
